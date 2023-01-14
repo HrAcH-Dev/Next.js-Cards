@@ -6,7 +6,7 @@ export default function Home({ cards }) {
   return (
     <>
       <Meta title='Home' description='Page description' />
-      <main>
+      <main className='w-1/4 mx-auto mt-20'>
         {cards.map(elem => <CradItem key={elem._id} card={elem} />)}
       </main>
     </>

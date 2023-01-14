@@ -1,9 +1,9 @@
-import React from 'react'
+
 
 export default function Card({ card }) {
-    console.log(card.number)
+  console.log(card.number)
   return (
-    <div>
+    <div className="mx-auto w-[200px] mt-20">
         <p>{card._id}</p>
         <p>{card.number}</p>
         <p className='mb-[40px]'>{card.balance}</p>
@@ -32,3 +32,5 @@ export const getStaticProps = async ({ params }) => {
         revalidate: 10
     }
 }
+
+

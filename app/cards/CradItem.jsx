@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function CradItem({ card }) {
   return (
-    <div className='mb-[40px]'>
+    <div className='text-white w-[200px] mx-auto '>
         <Link href={`/card/${card._id}`}>
             <div>Current Balance</div>
             <div>{card._id}</div>
