@@ -1,9 +1,13 @@
+import { useRouter } from "next/router"
 
 
 export default function Card({ card }) {
-  console.log(card.number)
+  const router = useRouter()
   return (
     <div className="mx-auto w-[200px] mt-20">
+        <button className="absolute left-[1%] top-[1%] text-blue-400 w-[5%] h-[10%] bg-black rounded-full" onClick={() => router.push('/')}>
+            Back
+        </button>
         <p>{card._id}</p>
         <p>{card.number}</p>
         <p className='mb-[40px]'>{card.balance}</p>
